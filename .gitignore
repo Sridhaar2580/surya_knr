@@ -1,0 +1,8 @@
+node_modules/
+android/
+www/vendor/jspdf.umd.min.js
+www/vendor/fonts/
+*.keystore
+*.jks
+keystore.properties
+.DS_Store

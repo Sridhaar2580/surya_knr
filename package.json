@@ -1,0 +1,31 @@
+{
+  "name": "vyapar-desk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vyapar Desk — distributor business management, packaged for Android with Capacitor",
+  "scripts": {
+    "vendor": "node scripts/fetch-vendor.js",
+    "add:android": "cap add android && npm run config:android",
+    "config:android": "node scripts/apply-android-config.js",
+    "sync": "cap sync android",
+    "open": "cap open android",
+    "build:debug": "cap sync android && cd android && ./gradlew assembleDebug",
+    "build:release": "cap sync android && cd android && ./gradlew assembleRelease",
+    "build:bundle": "cap sync android && cd android && ./gradlew bundleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/app-launcher": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/keyboard": "^7.0.0",
+    "@capacitor/share": "^7.0.0",
+    "@capacitor/splash-screen": "^7.0.0",
+    "@capacitor/status-bar": "^7.0.0",
+    "jspdf": "^2.5.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
